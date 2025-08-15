@@ -175,7 +175,7 @@ const applyFilters = async () => {
       </div>
       <button
         onClick={applyFilters}
-        className="w-full bg-lime-600 text-white py-2 mt-4 rounded"
+        className="w-full btn-gold text-white py-2 mt-4 rounded"
       >
         Apply Filters
       </button>
@@ -230,7 +230,7 @@ const applyFilters = async () => {
                 ) : (
                   <button
                     onClick={() => handleAddToCart(p)}
-                    className="bg-lime-600 mt-5 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    className="btn-gold mt-5 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-400"
                   >
                     Add to Cart
                   </button>

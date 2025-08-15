@@ -1,8 +1,8 @@
 import React from "react";
 const Footer = () => {
     return (
-      <footer className="bg-gray-800 text-white p-4 mt-8 text-center">
-        <p>&copy; {new Date().getFullYear()} Smart Rental Marketplace. All rights reserved.</p>
+      <footer className="text-white p-4 mt-8 text-center bg-green">
+        <p>&copy; {new Date().getFullYear()} AuraAttire. All rights reserved.   |   Email: contact@auraattire.com</p>
       </footer>
     );
   };

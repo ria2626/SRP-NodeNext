@@ -25,7 +25,7 @@ const router = useRouter();
   };
 
   useEffect(() => {
-    if (user) {
+    if (user) { 
       alert(`Welcome ${user?.name}`);
       router.push('/');
 
@@ -59,7 +59,7 @@ const router = useRouter();
             type="submit"
             disabled={loading}
             className={`w-full py-2 rounded-lg font-semibold text-white ${
-              loading ? "bg-gray-400" : "bg-lime-600 hover:bg-lime-700"
+              loading ? "bg-gray-400" : "btn-gold"
             }`}
           >
             {loading ? "Logging in..." : "Login"}

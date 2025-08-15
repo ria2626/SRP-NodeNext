@@ -169,7 +169,7 @@ export default function ListingDetail() {
           ) : (
             <button
               onClick={() => handleAddToCart(currentProduct)}
-              className="bg-lime-600 w-50 mb-8 text-white px-4 py-2 rounded shadow focus:outline-none focus:ring-2 focus:ring-lime-400"
+              className="btn-gold w-50 mb-8 text-white px-4 py-2 rounded shadow focus:outline-none focus:ring-2 focus:ring-lime-400"
             >
               Add to Cart
             </button>

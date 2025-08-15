@@ -30,13 +30,27 @@ const Header = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
-    };
+    }; 
   }, []);
 
   return (
-    <header className="bg-lime-600 text-white p-4 shadow-md">
+    <header className="p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Smart Rental Marketplace</h1>
+    <svg width="160" height="40" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AuraAttire logo">
+      <defs>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%" >
+          <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#D4AF37" flood-opacity="0.8"/>
+        </filter>
+      </defs>
+      <circle cx="50" cy="40" r="20" fill="none" stroke="#D4AF37" stroke-width="3" filter="url(#glow)" />
+      <text x="30" y="60" font-family="Georgia, serif" font-weight="700" font-size="50" fill="#2C6E49" letter-spacing="2">A</text>
+      <text x="80" y="55" font-family="'Dancing Script', cursive" font-size="45" fill="#2C6E49" font-weight="400" letter-spacing="1">
+        ura
+      </text>
+      <text x="160" y="55" font-family="Georgia, serif" font-weight="600" font-size="40" fill="#D4AF37" letter-spacing="2">
+        Attire
+      </text>
+    </svg>
         <nav>
           <ul className="flex space-x-4 items-center">
             <li>
@@ -67,7 +81,7 @@ const Header = () => {
                         </Link>
                       </li>
                       <li>
-                        <button
+                        <button  
                           onClick={() => {
                             handleLogout();
                             setDropdownOpen(false);
@@ -85,10 +99,10 @@ const Header = () => {
               )}
             </li>
 
-            <li>
+            <li>  
               <button
                 onClick={() => setCartOpen(true)}
-                className="bg-lime-600 text-white rounded relative"
+                className="btn-gold text-white rounded relative p-2"
               >
                 View Cart
                 {itemscount > 0 && (
