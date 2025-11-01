@@ -1,0 +1,106 @@
+body {
+	--fsAddBuffer: 22px;
+}
+[id='jsonformatter_incontent_4'],
+[id='jsonformatter_leaderboard_1'],
+[id='jsonformatter_Leaderboard_btf'],
+[id='jsonformatter_medrec_middle'],
+[id='jsonformatter_incontent_3'],
+[id='jsonformatter_leaderboard_atf'],
+[id='jsonformatter_leaderboard_1_larger_screens'],
+[id='jsonformatter_leaderboard_atf_larger_screens'] {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: calc(var(--height) + var(--fsAddBuffer));
+	height: calc(var(--height) + var(--fsAddBuffer));
+	width: 100%;
+}
+[id='jsonformatter_Leaderboard_btf'] {
+		--height: 280px;
+}
+[id='jsonformatter_incontent_3'] {
+		--height: 280px;
+}
+[id='jsonformatter_incontent_4'] {
+		--height: 280px;
+}
+[id='jsonformatter_leaderboard_1'] {
+		--height: 280px;
+}
+[id='jsonformatter_leaderboard_atf'] {
+		--height: 280px;
+}
+[id='jsonformatter_medrec_middle'] {
+		--height: 100px;
+}
+@media only screen and (min-width: 768px) {
+	[id='jsonformatter_Leaderboard_btf'] {
+		--height: 280px;
+	}
+	[id='jsonformatter_incontent_3'] {
+		--height: 280px;
+	}
+	[id='jsonformatter_incontent_4'] {
+		--height: 280px;
+	}
+	[id='jsonformatter_leaderboard_1'] {
+		--height: 280px;
+	}
+	[id='jsonformatter_leaderboard_atf'] {
+		--height: 90px;
+	}
+	[id='jsonformatter_medrec_middle'] {
+		--height: 250px;
+	}
+}
+@media only screen and (min-width: 970px) {
+	[id='jsonformatter_leaderboard_atf'] {
+		--height: 90px;
+	}
+	[id='jsonformatter_medrec_middle'] {
+		--height: 250px;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	[id='jsonformatter_medrec_middle'] {
+		--height: 200px;
+	}
+}
+@media only screen and (min-width: 1400px) {
+	[id='jsonformatter_medrec_middle'] {
+		--height: 250px;
+	}
+}
+@media only screen and (min-width: 1670px) {
+	[id='jsonformatter_medrec_middle'] {
+		--height: 250px;
+	}
+}
+@media only screen and (min-width: 1725px) {
+	[id='jsonformatter_leaderboard_1_larger_screens'] {
+		--height: 280px;
+	}
+	[id='jsonformatter_leaderboard_atf_larger_screens'] {
+		--height: 100px;
+	}
+}
+@media only screen and (min-width: 1870px) {
+	[id='jsonformatter_medrec_middle'] {
+		--height: 280px;
+	}
+}
+@media only screen and (min-width: 2000px) {
+	[id='jsonformatter_leaderboard_1_larger_screens'] {
+		--height: 280px;
+	}
+	[id='jsonformatter_leaderboard_atf_larger_screens'] {
+		--height: 100px;
+	}
+}
+@media only screen and (min-width: 2400px) {
+	[id='jsonformatter_leaderboard_atf'] {
+		--height: 280px;
+	}
+}
